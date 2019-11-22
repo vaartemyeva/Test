@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 34" width="33" height="34">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #fbfbfd;stroke: #27cf73;stroke-width: 10 } 
+	</style>
+	<g id="left">
+		<g id="фото">
+			<path id="Ellipse 2" class="shp0" d="M16.02 5.99C18.23 5.99 20.02 7.78 20.02 10C20.02 12.21 18.23 14.01 16.02 14.01C13.81 14.01 12.02 12.21 12.02 10C12.02 7.78 13.81 5.99 16.02 5.99Z" />
+		</g>
+	</g>
+</svg>

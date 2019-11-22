@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="style/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="js/sweet-modal/dist/min/jquery.sweet-modal.min.css" />
+    <script src="js/sweet-modal/dist/min/jquery.sweet-modal.min.js"></script>
+    <link rel="stylesheet" href="js/sweet-dropdown/dist/min/jquery.sweet-dropdown.min.css" />
+    <script src="js/sweet-dropdown/dist/min/jquery.sweet-dropdown.min.js"></script>
+
+    <title>rosmed.info</title>
+  </head>
+  <body>
+    <div class="main">
+      <nav class="main__menu">
+          <header>
+            <a href="#"><img src="images/logo.svg" alt=""></a>
+          </header>
+          <div class="main__menu_doctor">
+            <div class="main__menu_doctor_image">
+              <img src="images/doctor.svg" alt="">
+              <div class="main__menu_doctor_image_red">
+                <img src="images/doctor_red.svg" alt="">
+                <span id="numberOfNotice">4</span>
+              </div>
+              <img src="images/doctor_green.svg" class="main__menu_doctor_image_green" alt="">
+            </div>
+            <p>Андрей Барков</p>
+            <span>Кардиолог</span>
+          </div>
+          <div class="main__menu_balance">
+            <p>Баланс:</p>
+            <p><span>27.329</span> баллов</p>
+          </div>
+          <div class="main__menu_projects">
+            <a href="#">Проекты</a>
+            <img src="images/down.svg" alt="">
+          </div>
+          <div class="main__menu_projects_list">
+            <ul>
+              <li>
+                <a href="#">Romerus</a>
+                <img src="images/romerus.svg" alt="">
+              </li>
+            </ul>
+          </div>
+          <div class="main__menu_title">
+            <a href="#">Меню</a>
+            <img src="images/down.svg" alt="">
+          </div>
+          <div class="main__menu_title_list"> 
+            <ul>
+              <li class="main__menu_title_list_li">
+                <img src="images/patients.svg" alt="">
+                <a href="#">Пациенты</a>
+                <img src="images/right.svg" class="main__menu_title_list_li_right" alt="">
+              </li>
+              <li class="main__menu_title_list_li">
+                <img src="images/documents.svg" alt="">
+                <a href="#">Документация</a>
+                <img src="images/right.svg" class="main__menu_title_list_li_right" alt="">
+              </li>
+              <li class="main__menu_title_list_li">
+                <img src="images/liveJournal.svg" alt="">
+                <a href="#">Живая лента</a>
+                <img src="images/right.svg" class="main__menu_title_list_li_right" alt="">
+              </li>
+              <li class="main__menu_title_list_li">
+                <img src="images/message.svg" alt="">
+                <a href="#">Сообщения</a>
+                <div class="main__menu_title_list_li_commit">
+                  <img src="images/commit.svg" alt="">
+                  <span id="numberOfMessage">2</span>
+                </div>
+                <img src="images/right.svg" class="main__menu_title_list_li_right" alt="">
+              </li>
+              <li class="main__menu_title_list_li">
+                <img src="images/static.svg" alt="">
+                <a href="#">Статистика</a>
+                <img src="images/right.svg" class="main__menu_title_list_li_right" alt="">
+              </li>
+              <li class="main__menu_title_list_li">
+                <img src="images/manager.svg" alt="">
+                <a href="#">Менеджмент</a>
+                <img src="images/right.svg" class="main__menu_title_list_li_right" alt="">
+              </li>
+              <li class="main__menu_title_list_li">
+                <img src="images/audit.svg" alt="">
+                <a href="#">Аудит</a>
+                <img src="images/right.svg" class="main__menu_title_list_li_right" alt="">
+              </li>
+            </ul>
+          </div>
+          <div class="main__menu_rating">
+            <p>Рейтинг участников</p>
+            <img src="images/down.svg" alt="">
+          </div>
+          <div class="main__menu_rating_list">
+            <div class="main__menu_rating_list_box main__menu_rating_list_box_active">
+              <p><span>Я </span>/ 23 место</p>
+              <span>2047</span>
+              <img src="images/star.svg" alt="">
+            </div>
+            <div class="main__menu_rating_list_box">
+              <p>1 место</p>
+              <span>2448</span>
+              <img src="images/first.svg" alt="">
+            </div>
+            <div class="main__menu_rating_list_box">
+              <p>2 место</p>
+              <span>2836</span>
+              <img src="images/second.svg" alt="">
+            </div>
+            <div class="main__menu_rating_list_box">
+              <p>3 место</p>
+              <span>2846</span>
+              <img src="images/third.svg" alt="">
+            </div>
+          </div>
+          <div class="main__menu_footer">
+            <a href="#">Выход</a>
+            <img src="images/exit.svg" alt="">
+          </div>
+      </nav>
+      <div class="content">
+        <div class="content__logo_hide">
+            <img src="images/logo.svg" alt="">
+            <div class="content__logo_hide_icon">
+              <form action="post" id="search_text">
+                <input type="text" id="search_loupe" autocomplete>
+              </form>
+              <img src="images/loupe.svg" alt="">
+              <button data-dropdown="#dropdown-standard"><img src="images/menu.svg" alt=""></button>
+            </div>
+        </div>
+        <div class="main__menu_title_list dropdown-menu dropdown-anchor-top-right dropdown-has-anchor" id="dropdown-standard"> 
+          <ul>
+            <li class="main__menu_title_list_li">
+              <a href="#">Пациенты</a>
+            </li>
+            <li class="divider"></li>
+            <li class="main__menu_title_list_li">
+              <a href="#">Документация</a>
+            </li>
+            <li class="divider"></li>
+            <li class="main__menu_title_list_li">
+              <a href="#">Живая лента</a>
+            </li>
+            <li class="divider"></li>
+            <li class="main__menu_title_list_li">
+              <a href="#">Сообщения</a>
+            </li>
+            <li class="divider"></li>
+            <li class="main__menu_title_list_li">
+              <a href="#">Статистика</a>
+            </li>
+            <li class="divider"></li>
+            <li class="main__menu_title_list_li">
+              <a href="#">Менеджмент</a>
+            </li>
+            <li class="divider"></li>
+            <li class="main__menu_title_list_li">
+              <a href="#">Аудит</a>
+            </li>
+          </ul>
+        </div>
+        <header>
+          <div class="content__title">
+            <img src="images/content_title_icon1.svg" class="content__title_icon" alt="">
+            <a href="#">Главная</a>
+            <img src="images/content_title_icon2.svg" class="content__title_icon" alt="">
+            <a href="#">Менеджмент</a>
+          </div>
+          <div class="content__title_main">
+            <h2>Менеджмент</h2>
+          </div>
+        </header>
+        <div class="content__info">
+          <div class="content__info_box content__info_box_left">
+            <img src="images/manager_1.svg" class="content__info_box_img" alt="">
+            <div class="content__info_box_text">
+              <span>Менеджер регистра:</span>
+              <p class="content__info_box_name">Горбик Наталья Анатольевна</p>
+              <span>E-mail:</span>
+              <p class="content__info_box_mail">n.gorbik@rosmed.info</p>
+              <span>Телефон:</span>
+              <p class="content__info_box_phone">+7 (495) 255-54-49 доб. 112</p>
+            </div>
+          </div>
+          <div class="content__info_box content__info_box_right">
+            <img src="images/manager_2.svg" class="content__info_box_img" alt="">
+            <div class="content__info_box_text">
+              <span>Менеджер регистра:</span>
+              <p class="content__info_box_name">Волкова Анастасия Геннадьевна</p>
+              <span>E-mail:</span>
+              <p class="content__info_box_mail">a.volkova@rosmed.info</p>
+              <span>Телефон:</span>
+              <p class="content__info_box_phone">+7 (495) 255-54-49 доб. 114</p>
+            </div>
+          </div>
+          <div class="content__info_box content__info_box_left">
+            <img src="images/manager_2.svg" class="content__info_box_img" alt="">
+            <div class="content__info_box_text">
+              <span>Менеджер регистра:</span>
+              <p class="content__info_box_name">Волкова Анастасия Геннадьевна</p>
+              <span>E-mail:</span>
+              <p class="content__info_box_mail">a.volkova@rosmed.info</p>
+              <span>Телефон:</span>
+              <p class="content__info_box_phone">+7 (495) 255-54-49 доб. 114</p>  
+            </div>
+          </div>
+        </div>
+        <footer>
+          2017 © Rosmed.info
+        </footer>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

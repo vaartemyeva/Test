@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 103" width="370" height="103">
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="185" y1="122.2" x2="185" y2="-19.2">
+			<stop offset="0" stop-color="#6f5fa9"  />
+			<stop offset="1" stop-color="#cd8fb9"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+	</style>
+	<g id="left">
+		<g id="шапка">
+			<path id="шапка" class="shp0" d="M1 1L369 1L369 102L1 102L1 1Z" />
+		</g>
+	</g>
+</svg>
