@@ -3,15 +3,15 @@ var show = true;//начальное условие для прекращени�
 //-----Выпадающие списки левого меню-----
 
 $(".main__menu_projects").on("click", function(){
-    $('.main__menu_projects_list').slideToggle("slow");
+    $('.main__menu_projects_list').slideToggle();
 });
 
 $(".main__menu_title").on("click", function(){
-    $('.main__menu_title_list').slideToggle("slow");
+    $('.main__menu_title_list').slideToggle();
 });
 
 $(".main__menu_rating").on("click", function(){
-    $('.main__menu_rating_list').slideToggle("slow");
+    $('.main__menu_rating_list').slideToggle();
 });
 
 //----Добавление класса active при наведении курсора на пункт меню (левая навигация)
@@ -123,6 +123,6 @@ $(".main__menu_title_list_li_commit").on("click", function(){
 
 $(".content__logo_hide_icon img").on("click", function(){
     $('#search_text').css({
-        display: "flex",
+        opacity: 1,
     });
 });
